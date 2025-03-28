@@ -8,34 +8,189 @@
 /* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
 }
 
-/* Card and Form Styling */
-.card {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/* Sidebar Styling */
+#sidebar {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+}
+
+#sidebar .nav-item {
+  padding: 10px 0;
+}
+
+#sidebar .nav-link {
+  color: #2980b9;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#sidebar .nav-link:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+#sidebar .nav-item.active .nav-link {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* Main Content Area */
+main {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 28px;
+  color: #2980b9;
   font-weight: 600;
+}
+
+/* Profile Section */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Profile Image */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Student Info */
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-body li {
+  margin-bottom: 10px;
+}
+
+.card-body li strong {
   color: #2980b9;
 }
 
-/* Forgot password and Create Account links */
-a {
+/* Sidebar and Card Structure */
+.row {
+  margin-top: 30px;
+}
+
+.col-md-4 {
+  margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card i {
   color: #2980b9;
-  font-size: 14px;
 }
 
-a:hover {
-  text-decoration: underline;
+.card .btn {
+  margin-top: 10px;
 }
 
-/* Status Message */
-.status-msg {
-  margin-top: 15px;
-  color: red;
-  font-size: 14px;
+/* Dropdown Styling */
+.dropdown-menu {
+  min-width: 100px;
+}
+
+.dropdown-toggle {
+  border: none;
+  background-color: transparent;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #2980b9;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  #sidebar {
+    width: 250px;
+    position: fixed;
+  }
+
+  main {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Sidebar collapsing for smaller screens */
+  #sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .card-body li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card .card-body {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
