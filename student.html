@@ -24,42 +24,32 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">
-                <i class="fas fa-tachometer-alt"></i> Dashboard
+                <i class="fas fa-home"></i> Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/student/view-attendance.html">
-                <i class="fas fa-calendar-check"></i> View Attendance
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/student/view-results.html">
-                <i class="fas fa-file-alt"></i> View Results
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/student/timetable.html">
-                <i class="fas fa-table"></i> Timetable
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/student/holidays.html">
-                <i class="fas fa-calendar-alt"></i> Holidays
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/student/leave-apply.html">
-                <i class="fas fa-calendar-check"></i> Apply for Leave
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/student/fees-status.html">
-                <i class="fas fa-wallet"></i> Fees Status
+              <a class="nav-link" href="pages/student/attendance.html">
+                <i class="fas fa-calendar-check"></i> Attendance
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/student/assignments.html">
                 <i class="fas fa-clipboard-list"></i> Assignments
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/student/overall-grade.html">
+                <i class="fas fa-chart-line"></i> Overall Grade
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/student/reports.html">
+                <i class="fas fa-file-alt"></i> Reports
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/student/progress-report.html">
+                <i class="fas fa-tasks"></i> Progress Report
               </a>
             </li>
           </ul>
@@ -68,62 +58,91 @@
 
       <!-- Main Content Area -->
       <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
-        <h2 class="mt-4">Student Dashboard</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <i class="fas fa-calendar-check fa-3x"></i>
-                <h5 class="card-title mt-2">View Attendance</h5>
-                <a href="pages/student/view-attendance.html" class="btn btn-primary">View</a>
-              </div>
-            </div>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div>
+            <h2>Welcome, Himangshu Paul</h2>
+            <p class="text-muted">Sixth Semester | Section-II | BCA</p>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <i class="fas fa-file-alt fa-3x"></i>
-                <h5 class="card-title mt-2">View Results</h5>
-                <a href="pages/student/view-results.html" class="btn btn-primary">View</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <i class="fas fa-table fa-3x"></i>
-                <h5 class="card-title mt-2">Timetable</h5>
-                <a href="pages/student/timetable.html" class="btn btn-primary">View</a>
-              </div>
-            </div>
+          <div class="dropdown">
+            <button class="btn btn-light" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/student-photo.jpg" alt="Profile Picture" class="rounded-circle" width="40" height="40">
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" href="pages/student/profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
           </div>
         </div>
-        <!-- Additional Cards -->
-        <div class="row">
-          <div class="col-md-4 mb-4">
+
+        <div class="row mt-4">
+          <!-- Profile Info Section -->
+          <div class="col-md-4">
             <div class="card">
               <div class="card-body text-center">
-                <i class="fas fa-calendar-alt fa-3x"></i>
-                <h5 class="card-title mt-2">Holiday Calendar</h5>
-                <a href="pages/student/holidays.html" class="btn btn-primary">View</a>
+                <img src="assets/student-photo.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" width="120" height="120">
+                <h5 class="card-title">Himangshu Paul</h5>
+                <p class="text-muted">Active</p>
+                <ul class="list-unstyled">
+                  <li><strong>Roll No.:</strong> 2096</li>
+                  <li><strong>Course:</strong> BCA</li>
+                  <li><strong>Semester:</strong> Sixth</li>
+                  <li><strong>Section:</strong> Section-II</li>
+                  <li><strong>Department:</strong> School of Computer Application</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <i class="fas fa-calendar-check fa-3x"></i>
-                <h5 class="card-title mt-2">Apply for Leave</h5>
-                <a href="pages/student/leave-apply.html" class="btn btn-primary">Apply</a>
+
+          <!-- Dashboard Links Section -->
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="fas fa-calendar-check fa-3x"></i>
+                    <h5 class="card-title">Attendance</h5>
+                    <a href="pages/student/attendance.html" class="btn btn-primary">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="fas fa-clipboard-list fa-3x"></i>
+                    <h5 class="card-title">Assignments</h5>
+                    <a href="pages/student/assignments.html" class="btn btn-primary">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="fas fa-file-alt fa-3x"></i>
+                    <h5 class="card-title">Reports</h5>
+                    <a href="pages/student/reports.html" class="btn btn-primary">View</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <i class="fas fa-wallet fa-3x"></i>
-                <h5 class="card-title mt-2">Fees Status</h5>
-                <a href="pages/student/fees-status.html" class="btn btn-primary">Check</a>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="fas fa-chart-line fa-3x"></i>
+                    <h5 class="card-title">Overall Grade</h5>
+                    <a href="pages/student/overall-grade.html" class="btn btn-primary">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="fas fa-tasks fa-3x"></i>
+                    <h5 class="card-title">Progress Report</h5>
+                    <a href="pages/student/progress-report.html" class="btn btn-primary">View</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
