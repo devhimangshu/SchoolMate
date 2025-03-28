@@ -1,0 +1,94 @@
+<!-- student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | SchoolMate</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/student-auth.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Welcome to SchoolMate Student Dashboard</h2>
+    
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="pages/student/view-attendance.html"><img src="assets/icons/attendance-icon.png" alt="Attendance Icon"> View Attendance</a></li>
+        <li><a href="pages/student/view-results.html"><img src="assets/icons/results-icon.png" alt="Results Icon"> View Results</a></li>
+        <li><a href="pages/student/timetable.html"><img src="assets/icons/timetable-icon.png" alt="Timetable Icon"> Timetable</a></li>
+        <li><a href="pages/student/notices.html"><img src="assets/icons/notice-icon.png" alt="Notices Icon"> Notices</a></li>
+        <li><a href="pages/student/holidays.html"><img src="assets/icons/holidays-icon.png" alt="Holiday Icon"> Holidays</a></li>
+        <li><a href="pages/student/leave-apply.html"><img src="assets/icons/leave-icon.png" alt="Leave Icon"> Apply for Leave</a></li>
+        <li><a href="pages/student/fees-status.html"><img src="assets/icons/fees-icon.png" alt="Fees Icon"> Fee Status</a></li>
+        <li><a href="pages/student/assignments.html"><img src="assets/icons/assignments-icon.png" alt="Assignments Icon"> Assignments</a></li>
+        <li><a href="index.html"><img src="assets/icons/logout-icon.png" alt="Logout Icon"> Logout</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Dashboard Content -->
+    <div class="content">
+      <div class="card">
+        <img src="assets/icons/attendance-icon.png" alt="Attendance Icon">
+        <h3>View Attendance</h3>
+        <p>Check your daily attendance record.</p>
+        <a href="pages/student/view-attendance.html">Go to View Attendance</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/results-icon.png" alt="Results Icon">
+        <h3>View Results</h3>
+        <p>Check your exam results and marks.</p>
+        <a href="pages/student/view-results.html">Go to View Results</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/timetable-icon.png" alt="Timetable Icon">
+        <h3>Timetable</h3>
+        <p>View your class timetable.</p>
+        <a href="pages/student/timetable.html">Go to Timetable</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/notice-icon.png" alt="Notices Icon">
+        <h3>Notices</h3>
+        <p>View important notices and announcements.</p>
+        <a href="pages/student/notices.html">Go to Notices</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/holidays-icon.png" alt="Holidays Icon">
+        <h3>Holidays</h3>
+        <p>Check the list of upcoming holidays.</p>
+        <a href="pages/student/holidays.html">Go to Holidays</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/leave-icon.png" alt="Leave Icon">
+        <h3>Apply for Leave</h3>
+        <p>Request leave for specific dates.</p>
+        <a href="pages/student/leave-apply.html">Go to Apply for Leave</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/fees-icon.png" alt="Fees Icon">
+        <h3>Fee Status</h3>
+        <p>View your fee payment status and details.</p>
+        <a href="pages/student/fees-status.html">Go to Fee Status</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/icons/assignments-icon.png" alt="Assignments Icon">
+        <h3>Assignments</h3>
+        <p>Download and view your assignments.</p>
+        <a href="pages/student/assignments.html">Go to Assignments</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
