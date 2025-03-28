@@ -8,142 +8,34 @@
 /* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f6fa; /* Light gray background */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-/* Login Container */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f6fa;
-  padding: 10px;
-}
-
-.login-box {
+/* Card and Form Styling */
+.card {
   background: #ffffff;
   border-radius: 12px;
-  padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 450px;
-  text-align: center;
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
   color: #2980b9;
 }
 
-.tagline {
-  color: #aaa;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.sub-tagline {
-  color: #888;
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-
-/* Input Fields */
-.input-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-group i {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #aaa;
-}
-
-input[type="email"], input[type="password"] {
-  width: 100%;
-  padding: 10px 10px 10px 35px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: border 0.3s ease;
-}
-
-input[type="email"]:focus, input[type="password"]:focus {
-  border-color: #3498db;
-}
-
-input[type="email"], input[type="password"] {
-  margin-bottom: 20px;
-}
-
-input[type="password"] {
-  width: 90%;
-}
-
-#togglePassword {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #aaa;
-  cursor: pointer;
-}
-
-/* Login Button */
-.login-btn {
-  width: 100%;
-  padding: 12px;
-  background-color: #2980b9;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-btn:hover {
-  background-color: #3498db;
-}
-
-/* Links */
-.forgot-password, .create-account {
-  font-size: 14px;
+/* Forgot password and Create Account links */
+a {
   color: #2980b9;
-  text-decoration: none;
+  font-size: 14px;
 }
 
-.forgot-password:hover, .create-account:hover {
+a:hover {
   text-decoration: underline;
 }
 
+/* Status Message */
 .status-msg {
   margin-top: 15px;
   color: red;
   font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 480px) {
-  .login-box {
-    padding: 20px;
-    width: 90%;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  .tagline {
-    font-size: 14px;
-  }
 }
